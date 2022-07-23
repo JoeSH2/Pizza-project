@@ -1,0 +1,21 @@
+.scroll {
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #18dd646b;
+    border: 1px solid #000;
+    z-index: 0;
+}
+
+.arrowUp {
+    transform: rotate(90deg);
+    height: 15px;
+    width: 15px;
+}

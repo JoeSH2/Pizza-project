@@ -1,0 +1,64 @@
+.inputWrapper {
+    min-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 25px;
+    margin: 0 20px 0 0;
+
+    @media (max-width: 692.5px) {
+        position: absolute;
+        top: 105px;
+        right: 0;
+        margin: 0;
+        min-width: 100%;
+        border: 1px solid #006427;
+        background-color: #fffffff5;
+    }
+
+    animation: loadingInput 0.5s forwards;
+}
+
+.input {
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    outline: none;
+    margin: 0 0 0 7px;
+
+    @media (max-width: 780.5px) {
+       
+    }
+}
+
+.inputImg {
+    margin: 0 7px 0 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+@keyframes loadingInput {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

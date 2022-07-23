@@ -1,0 +1,39 @@
+.header__order {
+    position: relative;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FE5F1E;
+    border-radius: 30px;
+    color: #FFF;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+  }
+  .header__order:hover {
+    color: #FFF;
+    background-color: #fd811b;
+  }
+  .header__sum {
+    padding: 0 0 0 20px;
+  }
+  .header__sum::after {
+    position: absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.25);
+    width: 1px;
+    height: 25px;
+    top: 25%;
+    left: 50%;
+  }
+  .header__positions {
+    display: flex;
+    align-items: center;
+  }
+  .header__busket {
+    width: 18px;
+  }
+  .header__busketSum {
+    padding: 0 20px 0 8px;
+  }
